@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  min-height: 97vh;
+  font-family: "Monstserrat", sans-serif;
+}
+
+.darkmode {
+  padding-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.lightmode {
+  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.toggle {
+  display: inline-flex;
+}
+.toggle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.toggle-btn {
+  width: 40px;
+  height: 20px;
+  background: grey;
+  border-radius: 30px;
+  transition: all 400ms ease-in-out;
+}
+.toggle-btn > .inner-circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-color: #00d2ff;
+  border-radius: 50%;
+  transition: all 400ms ease-in-out;
+}
+.toggle-btn.active {
+  background: rgb(0, 0, 0);
+}
+.toggle-btn.active > .inner-circle {
+  margin-left: 20px;
+}
+
+.dark-mode {
+  transition: color 600ms, background-color 600ms;
+
+  background: #000000;
+  filter: invert(1) hue-rotate(340deg);
+}
+.darkMode-label {
+  display: inline;
+}
+li button {
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+header {
+  display: inline;
+  text-align: right;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 150px;
+  float: left;
+  margin-left: 40px;
+}
+.navlinks {
+  list-style: none;
+  padding-right: 60px;
+}
+.navlinks li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+button {
+  background-color: #00d2ff;
+  border: none;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgb(0, 107, 139);
+}
+.barsBlock {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: end;
+  transform: scaleY(-1);
+  bottom: 0;
+}
+
+.barsBlock .bars {
+  border-radius: 10px;
+  width: 15px;
+  margin: 1px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  background: #00d2ff;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  background-color: #242424;
+}
+.footer .slider {
+  margin-left: 40px;
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+.footer .time {
+  margin-left: 50px;
+  display: flex;
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+.footer .newArrayBtn {
+  position: absolute;
+  right: 50px;
+}
+.footer .newArrayBtn #newData {
+  padding: 20px;
+  margin: 4px 2px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Monstserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.footer #executionTime {
+  padding-left: 5px;
+}

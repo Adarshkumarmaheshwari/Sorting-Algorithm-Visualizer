@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="icon" href="Favicon/favicon.png" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <h1 class="heading">Sort It!</h1> -->
+      <div class="logo">
+      <img src="logo.png" alt="Sort it">
+      </div>
+      <nav>
+        <ul class="navlinks">
+          <li>
+            <button type="button" class="btn" id="Bubblesort">
+              Bubble sort
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" id="Selectionsort">
+              Selection sort
+            </button>
+          </li>
+           <li>
+            <button type="button" class="btn" id="Insertionsort">
+              Insertion sort
+            </button>
+          </li>
+          <!--<li>
+            <button type="button" class="btn" id="Quicksort">Quick sort</button>
+          </li>
+          <li>
+            <button type="button" class="btn" id="Mergesort">Merge sort</button>
+          </li> -->
+          <li>
+            <div class="toggle">
+            <img src="Lightmode.png" alt="lightmodeicon" class="lightmode">
+            <div class"toggle-container" onclick="darkMode()">
+             <div class="toggle-btn" onclick="this.classList.toggle('active')" >
+               <div class="inner-circle">
+               </div> </div>
+            </div>
+                <img src="Darkmode.png" alt="Darkmodeicon" class="darkmode">
+
+           </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="barsBlock" class="barsBlock"></div>
+
+    <footer class="footer">
+      <div class="slider">
+        <p class="dataSlider">Data Size</p>
+        <input
+          class="arrSize slider-input"
+          type="range"
+          min="2"
+          max="100"
+          step="2"
+          value="10"
+        />
+      </div>
+      <div class="time">
+        <p id="executionText">Execution Time:</p>
+        <p id="executionTime"></p>
+      </div>
+      <div class="newArrayBtn">
+        <button type="button" id="newData">Random Array</button>
+      </div>
+    </footer>
+    <script src="js/Algorithms.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
